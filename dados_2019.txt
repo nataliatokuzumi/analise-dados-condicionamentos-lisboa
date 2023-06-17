@@ -1,0 +1,71 @@
+Relatório de dados de condicionamento em Lisboa.
+
+Fonte: https://lisboaaberta.cm-lisboa.pt/index.php/pt/dados/conjuntosde-dados
+Arquivo: condicionamentostransito2019.csv
+Ano: 2019
+-----------------------------------------------------
+
+1. Súmula da duração dos condicionamentos no ano: 120611670h
+
+2. Lista da súmula da duração dos condicionamentos no ano por causa:
+
+SUBSTITUIÇÃO DE CAIXA MULTIBANCO: 456h
+: 9h
+PLANTAÇÃO / PODA DE ÁRVORES: 782703h
+OBRAS NO SUBSOLO: 1601h
+OBRAS NO SUBSOLO - FAIXA DE RODAGEM: 1293025h
+INSP. COLECTORES - PASSEIO E ESTACION.: 82h
+OBRA - PASSEIO E ESTACION.: 3558791h
+CARGAS E DESCARGAS: 14007177h
+ACESSO DE VEÍCULOS À OBRA: 10911349h
+LIGAÇÃO DE RAMAL - PASSEIO E ESTACION.: 10924h
+REPARAÇÃO DE COLECTOR/RAMAL: 51h
+PODA DE ÁRVORES: 661h
+PINTURAS: 6599341h
+MUDANÇAS: 1582179h
+DESMONTAGEM DE GRUA: 1549255h
+SONDAGENS - FAIXA DE RODAGEM: 777553h
+VIGILIA: 2h
+SONDAGENS: 270h
+CARGAS E DESCARGAS/OBRAS: 46095156h
+DESFILE: 1551560h
+INSPECÇÃO COLECTORES - FAIXA DE RODAGEM: 1297h
+REP. COLECTOR/RAMAL - PASSEIO E ESTAC.: 1447h
+SONDAGENS - PASSEIO E ESTACION.: 389616h
+BETONAGENS: 4696114h
+REP. DE COLECTOR/RAMAL- FAIXA DE RODAGEM: 4941h
+LIGAÇÃO DE RAMAL: 112h
+CORRIDA: 85h
+OBRA - FAIXA DE RODAGEM: 2014303h
+LIGAÇÃO DE RAMAL - FAIXA DE RODAGEM: 25967h
+OBRA: 998h
+CICLOTURISMO: 14h
+MANIFESTAÇÃO: 1161009h
+BETONAGENS/CARGAS DESCARGAS: 2501653h
+AUTOGRUA: 3106794h
+PROCISSÃO: 621h
+FILMAGENS: 2356578h
+OBRAS NO SUBSOLO - PASSEIO E ESTACION.: 41070h
+RESERVA DE ESTACIONAMENTO: 7789410h
+ILUMINAÇÃO PÚBLICA: 249h
+CONCENTRAÇÃO: 1170042h
+CAMINHADA: 37h
+MONTAGEM DE GRUA: 330h
+REPAVIMENTAÇÕES: 5478h
+EVENTO: 6621360h
+
+3. Número de casos das várias relevâncias por causa em cada ano:
+
+Não relevante: 2
+: 1
+Relevante: 3097
+Pouco relevante: 1685
+
+-----------------------------------------------------
+Autoras:
+Natália Akemi Martins Costa Tokuzumi
+Bianca Costa Lima
+Data: 2023-06-17
+Professor: João Leitão
+Curso: Aplicações Informáticas para Ciência de Dados
+Instituição: IPLUSO

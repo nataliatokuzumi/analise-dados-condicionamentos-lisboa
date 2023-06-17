@@ -1,0 +1,62 @@
+Relatório de dados de condicionamento em Lisboa.
+
+Fonte: https://lisboaaberta.cm-lisboa.pt/index.php/pt/dados/conjuntosde-dados
+Arquivo: condicionamentostransito2021.csv
+Ano: 2021
+-----------------------------------------------------
+
+1. Súmula da duração dos condicionamentos no ano: 3037557h
+
+2. Lista da súmula da duração dos condicionamentos no ano por causa:
+
+SUBSTITUIÇÃO DE CAIXA MULTIBANCO: 1135h
+PLANTAÇÃO / PODA DE ÁRVORES: 52002h
+OBRAS NO SUBSOLO - FAIXA DE RODAGEM: 39976h
+INSP. COLECTORES - PASSEIO E ESTACION.: 274h
+OBRA - PASSEIO E ESTACION.: 267008h
+CARGAS E DESCARGAS: 260911h
+ACESSO DE VEÍCULOS À OBRA: 89305h
+LIGAÇÃO DE RAMAL - PASSEIO E ESTACION.: 33056h
+PINTURAS: 251088h
+MUDANÇAS: 29530h
+DESMONTAGEM DE GRUA: 1180h
+SONDAGENS - FAIXA DE RODAGEM: 6364h
+VIGILIA: 56h
+CARGAS E DESCARGAS/OBRAS: 690100h
+DESFILE: 54h
+INSPECÇÃO COLECTORES - FAIXA DE RODAGEM: 1539h
+REP. COLECTOR/RAMAL - PASSEIO E ESTAC.: 1468h
+SONDAGENS - PASSEIO E ESTACION.: 5622h
+BETONAGENS: 49400h
+REP. DE COLECTOR/RAMAL- FAIXA DE RODAGEM: 12184h
+CORRIDA: 61h
+OBRA - FAIXA DE RODAGEM: 527177h
+LIGAÇÃO DE RAMAL - FAIXA DE RODAGEM: 56632h
+MANIFESTAÇÃO: 1224h
+BETONAGENS/CARGAS DESCARGAS: 365584h
+AUTOGRUA: 22739h
+REPARAÇÃO DE GUARDAS/JUNTAS: 648h
+PROCISSÃO: 33h
+FILMAGENS: 21760h
+OBRAS NO SUBSOLO - PASSEIO E ESTACION.: 44802h
+RESERVA DE ESTACIONAMENTO: 158810h
+ILUMINAÇÃO PÚBLICA: 817h
+CONCENTRAÇÃO: 2792h
+CAMINHADA: 22h
+MONTAGEM DE GRUA: 5868h
+REPAVIMENTAÇÕES: 22972h
+EVENTO: 13364h
+
+3. Número de casos das várias relevâncias por causa em cada ano:
+
+Relevante: 6907
+Pouco relevante: 2842
+
+-----------------------------------------------------
+Autoras:
+Natália Akemi Martins Costa Tokuzumi
+Bianca Costa Lima
+Data: 2023-06-17
+Professor: João Leitão
+Curso: Aplicações Informáticas para Ciência de Dados
+Instituição: IPLUSO

@@ -1,0 +1,64 @@
+Relatório de dados de condicionamento em Lisboa.
+
+Fonte: https://lisboaaberta.cm-lisboa.pt/index.php/pt/dados/conjuntosde-dados
+Arquivo: condicionamentostransito2018.csv
+Ano: 2018
+-----------------------------------------------------
+
+1. Súmula da duração dos condicionamentos no ano: 167232020h
+
+2. Lista da súmula da duração dos condicionamentos no ano por causa:
+
+SUBSTITUIÇÃO DE CAIXA MULTIBANCO: 772992h
+PLANTAÇÃO / PODA DE ÁRVORES: 774h
+REPARAÇÃO DE GUARDAS DE SEGURANÇA/JUNTAS: 176h
+OBRAS NO SUBSOLO - FAIXA DE RODAGEM: 793722h
+CARGAS E DESCARGAS: 9271218h
+ACESSO DE VEÍCULOS À OBRA: 8511462h
+REPARAÇÃO DE COLECTOR/RAMAL: 775549h
+PODA DE ÁRVORES: 1928767h
+INSPECÇÃO COLECTORES: 276h
+PINTURAS: 5414656h
+MUDANÇAS: 6595037h
+DESMONTAGEM DE GRUA: 387307h
+VIGILIA: 47h
+SONDAGENS: 3660h
+CARGAS E DESCARGAS/OBRAS: 41897117h
+DESFILE: 78h
+BETONAGENS: 10830132h
+LIGAÇÃO DE RAMAL: 802853h
+CORRIDA: 1155539h
+REPAVIMENTAÇÕES: 1163498h
+OBRA - FAIXA DE RODAGEM: 1237161h
+LIGAÇÃO DE RAMAL - FAIXA DE RODAGEM: 750h
+OBRA: 8590177h
+CICLOTURISMO: 4h
+MANIFESTAÇÃO: -292h
+BETONAGENS/CARGAS DESCARGAS: 9843055h
+AUTOGRUA: 10805252h
+PROCISSÃO: -98h
+FILMAGENS: 6570262h
+OBRAS NO SUBSOLO - PASSEIO E ESTACION.: 4054h
+RESERVA DE ESTACIONAMENTO: 5402214h
+PLANTAÇÃO DE ÁRVORES: 8h
+ILUMINAÇÃO PÚBLICA: 385729h
+CONCENTRAÇÃO: 384918h
+CAMINHADA: 581h
+MONTAGEM DE GRUA: 1927582h
+OBRAS NO SUBSOLO: 1740297h
+EVENTO: 30035506h
+
+3. Número de casos das várias relevâncias por causa em cada ano:
+
+Não relevante: 736
+Relevante: 2784
+Pouco relevante: 1945
+
+-----------------------------------------------------
+Autoras:
+Natália Akemi Martins Costa Tokuzumi
+Bianca Costa Lima
+Data: 2023-06-17
+Professor: João Leitão
+Curso: Aplicações Informáticas para Ciência de Dados
+Instituição: IPLUSO
