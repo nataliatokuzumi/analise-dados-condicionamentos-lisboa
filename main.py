@@ -77,7 +77,7 @@ def criar_lista_objetos_pre20(file_name):
     with open(file_name, mode='r', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         linhas = [i for i in reader]
-        condicionamentos, soma, motivos, impactos = [], 0, [], []
+        condicionamentos, soma = [], 0
         for num, linha in enumerate(linhas[1:]):
             try:
                 condicionamentos.append(CondicionamentoPre20(linha))
@@ -94,7 +94,7 @@ def criar_lista_objetos_pos20(file_name):
     with open(file_name, mode='r', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
         linhas = [i for i in reader]
-        condicionamentos, soma, motivos, impactos = [], 0, [], []
+        condicionamentos, soma= [], 0
         for num, linha in enumerate(linhas[1:]):
             try:
                 condicionamentos.append(CondicionamentoPos20(linha))
@@ -220,7 +220,7 @@ Variação da súmula da duração total dos constrangimentos entre 2020 e 2019:
 Variação da súmula da duração total dos constrangimentos entre 2021 e 2020: {round((d/c - 1) * 100)}%
 
 Veja o gráfico com a súmula da duração do total de condicionamentos por ano na figura - Visualização
-do gráfico da súmula da duração do total de condicionamentos por ano - e a previsão para 2022.
+do gráfico da súmula da duração do total de condicionamentos por ano.
     
 -----------------------------------------------------
 Autoras:
@@ -273,7 +273,7 @@ sum_2021 = sumula_duracao(dados_2021)
 mot_2021 = duracao_por_motivo(dados_2021)
 imp_2021 = casos_por_impacto(dados_2021)
 
-# Salvar os dados de 2021 em um arquivo.txt
+# Salvar os dados de 2021 em um arquivo .txt
 with open('dados_2021.txt', mode='w', encoding='utf-8') as file:
     file.write(report_ano('condicionamentostransito2021.csv', '2021', sum_2021, mot_2021, imp_2021))
     file.close()
@@ -283,11 +283,15 @@ with open('variacao_por_ano.txt', mode='w', encoding='utf-8') as file:
     file.write(report_ano_ano(sum_2018, sum_2019, sum_2020, sum_2021))
     file.close()
 
-# Visualização do gráfico da súmula da duração do total de condicionamentos por ano
+# Cálculo da média da quantidade de motivos por ano
+media_mot = ((len(mot_2018)) + len(mot_2019) + len(mot_2020) + len(mot_2021)) / 4
+#print(media_mot)
+
+# Criação dos gráficos para visualização da súmula de 2018 a 2021
 fig, axs = plt.subplots(1, 2, constrained_layout=True, sharey=True)
 anos = ['2018', '2019', '2020', '2021']
 counts = [167.23, 120.61, 3.74, 3.04] # Valores convertidos para milhões de horas
-#
+
 # Gráfico Plot
 axs[0].plot(anos, counts)
 axs[0].set_xticks(anos)
@@ -309,10 +313,9 @@ for i, valor in enumerate(counts):
 fig.suptitle('Súmula da duração dos constrangimentos em Lisboa por ano', fontsize=14)
 plt.savefig('Análise constrangimentos em Lisboa')
 
-
-# 6. A vossa previsão em termos de duração total dos constrangimento para o ano de 2022
-# Ajustamos uma curva quadrática a um conjunto de pontos (total dos constrangimentos em 2018, 2019, 2020 e 2021)
-# e realizamos uma previsão para o ano de 2022 com base nessa curva
+# Previsão em termos de duração total dos constrangimento para o ano de 2022
+# Ajuste de uma curva quadrática a um conjunto de pontos (total dos constrangimentos em 2018, 2019, 2020 e 2021)
+# e previsão para o ano de 2022 com base nessa curva
 
 anos = ['2018', '2019', '2020', '2021']
 valores = [sum_2018, sum_2019, sum_2020, sum_2021]
@@ -337,6 +340,4 @@ valor_2022 = p(ano_2022)
 
 plt.plot(ano_2022, valor_2022, 'ro', label='2022 (Previsão)')
 plt.legend()
-
 plt.savefig("Previsão 2022")
-print(f"Previsão para 2022: {valor_2022} milhões de horas")
