@@ -4,6 +4,7 @@
 import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 class CondicionamentoPre20:
@@ -272,7 +273,7 @@ sum_2021 = sumula_duracao(dados_2021)
 mot_2021 = duracao_por_motivo(dados_2021)
 imp_2021 = casos_por_impacto(dados_2021)
 
-# Salvar os dados de 2021 em um arquivo .txt
+# Salvar os dados de 2021 em um arquivo.txt
 with open('dados_2021.txt', mode='w', encoding='utf-8') as file:
     file.write(report_ano('condicionamentostransito2021.csv', '2021', sum_2021, mot_2021, imp_2021))
     file.close()
@@ -283,12 +284,58 @@ with open('variacao_por_ano.txt', mode='w', encoding='utf-8') as file:
     file.close()
 
 # Visualização do gráfico da súmula da duração do total de condicionamentos por ano
+fig, axs = plt.subplots(1, 2, constrained_layout=True, sharey=True)
 anos = ['2018', '2019', '2020', '2021']
-plt.figure()
-plt.plot([sum_2018, sum_2019, sum_2020, sum_2021])
+counts = [167.23, 120.61, 3.74, 3.04] # Valores convertidos para milhões de horas
+#
+# Gráfico Plot
+axs[0].plot(anos, counts)
+axs[0].set_xticks(anos)
+axs[0].set_ylabel('Quantidade em milhões de horas')
+axs[0].set_xlabel('Anos')
+
+for i, valor in enumerate(counts):
+    axs[0].annotate(str(valor), (anos[i], valor), xytext=(0, 5), textcoords='offset points', ha='center')
+
+# Gráfico de Barras
+bar_colors = ['tab:red', 'tab:blue', 'tab:green', 'tab:orange']
+axs[1].bar(anos, counts, color=bar_colors)
+axs[1].set_xticks(anos)
+axs[1].set_xlabel('Anos')
+
+for i, valor in enumerate(counts):
+    axs[1].annotate(str(valor), (anos[i], valor), xytext=(0, 5), textcoords='offset points', ha='center')
+
+fig.suptitle('Súmula da duração dos constrangimentos em Lisboa por ano', fontsize=14)
+plt.savefig('Análise constrangimentos em Lisboa')
+
+
+# 6. A vossa previsão em termos de duração total dos constrangimento para o ano de 2022
+# Ajustamos uma curva quadrática a um conjunto de pontos (total dos constrangimentos em 2018, 2019, 2020 e 2021)
+# e realizamos uma previsão para o ano de 2022 com base nessa curva
+
+anos = ['2018', '2019', '2020', '2021']
+valores = [sum_2018, sum_2019, sum_2020, sum_2021]
+
+x = np.arange(len(anos))
+y = np.array(valores)
+coeficientes = np.polyfit(x, y, 2)
+p = np.poly1d(coeficientes)
+
+# Plot dos dados originais e da curva ajustada
+plt.plot(x, y, 'o', label='Dados')
+plt.plot(x, p(x), label='Curva ajustada')
+plt.xlabel('Ano')
+plt.ylabel('Quantidade em milhões de horas')
 plt.title('Súmula da duração dos constrangimentos em Lisboa por ano')
-plt.xlabel('Anos')
-plt.xticks(ticks=[0, 1, 2, 3], labels=anos)
-plt.ylabel('Quantidade em milhões')
-plt.legend(labels=[sum_2018, sum_2019, sum_2020, sum_2021])
-plt.show()
+plt.legend()
+
+# Obtendo a previsão para o ano de 2022
+ano_2022 = len(anos)
+valor_2022 = p(ano_2022)
+
+plt.plot(ano_2022, valor_2022, 'ro', label='2022 (Previsão)')
+plt.legend()
+
+plt.savefig("Previsão 2022")
+print(f"Previsão para 2022: {valor_2022} milhões de horas")
