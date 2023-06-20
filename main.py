@@ -323,6 +323,7 @@ coeficientes = np.polyfit(x, y, 2)
 p = np.poly1d(coeficientes)
 
 # Plot dos dados originais e da curva ajustada
+plt.clf()  # Limpa a figura anterior
 plt.plot(x, y, 'o', label='Dados')
 plt.plot(x, p(x), label='Curva ajustada')
 plt.xlabel('Ano')
